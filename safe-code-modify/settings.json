@@ -2,7 +2,7 @@
   "hooks": {
     "user-prompt-submit": [
       {
-        "pattern": "修改代码|修改|复现|修改报错",
+        "pattern": "安全修改代码|安全修改|安全复现|安全修改报错",
         "action": "execute-skill",
         "skill": "safe-code-modify",
         "description": "检测到代码修改相关关键词时自动使用safe-code-modify skill"
