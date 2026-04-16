@@ -1,0 +1,19 @@
+{
+  "name": "safe-delete",
+  "description": "安全删除文件，将文件移动到垃圾文件夹而不是直接删除",
+  "author": "Claude",
+  "version": "1.0",
+  "permissions": [
+    "file-system"
+  ],
+  "hooks": {
+    "user-prompt-submit": [
+      {
+        "pattern": "安全删除|删除文件|移动到垃圾|清理空间|清理垃圾",
+        "action": "execute-skill",
+        "skill": "safe-delete",
+        "description": "检测到删除文件相关关键词时自动使用safe-delete skill"
+      }
+    ]
+  }
+}
